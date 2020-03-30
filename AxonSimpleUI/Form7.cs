@@ -74,9 +74,6 @@ namespace ProjectMainDab
             richTextBox1.Text += ("\r\n") + ("Settings loaded");
             System.Threading.Thread.Sleep(100);
             richTextBox1.Text += ("\r\n") + ("Ready");
-
-            form.Show();
-            base.Hide();
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
