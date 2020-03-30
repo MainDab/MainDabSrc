@@ -74,7 +74,7 @@ namespace ProjectMainDab
             richTextBox1.Text += ("\r\n") + ("Settings loaded");
             System.Threading.Thread.Sleep(100);
             richTextBox1.Text += ("\r\n") + ("Ready");
-            SynapseX___mainj1 form = new SynapseX___mainj1();  // new form duh
+
             form.Show();
             base.Hide();
         }
