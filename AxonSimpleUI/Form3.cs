@@ -184,9 +184,6 @@ namespace ProjectMainDab
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            SynapseX___mainj1 form = new SynapseX___mainj1();  // new form duh
-            form.Show();
-            base.Hide();
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
