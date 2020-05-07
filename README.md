@@ -11,7 +11,7 @@ Note that this is the outdated UI (V.3.5).
 Also note that there is no support so don't get angry with me if something is broken.
 MainDab is semi opened source, and the source can be requested to be uploaded to github at any time.
 
-#What this build has
+## What this build has
 
 -> Full MainDab source code with the code left in 
 
