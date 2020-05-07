@@ -1,3 +1,0 @@
--- Fuck this shitty game
--- https://robloxscripts.com/wp-content/uploads/2020/02/NINJACUNTLEGENDS-480x270.jpg
-loadstring(game:HttpGet("https://system-exodus.com/scripts/ninjalegends/NinjaLegendsV2.lua",true))()
