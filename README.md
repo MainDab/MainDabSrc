@@ -16,3 +16,5 @@ MainDab is semi opened source, and the source can be requested to be uploaded to
 -> Full MainDab source code with the code left in 
 
 -> MainDab Updater source code
+
+-> Some parts are annotated for you, some are not. I don't really bother doing annotation.
