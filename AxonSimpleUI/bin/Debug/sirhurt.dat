@@ -1,0 +1,1 @@
+loadstring(HttpGet('https://sirhurt.net/upl/UIScriptHub/Scripts/script.php?script=StreamSniper.lua'))()

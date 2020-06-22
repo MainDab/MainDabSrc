@@ -53,10 +53,10 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.SystemColors.Control;
-            this.button5.Location = new System.Drawing.Point(13, 270);
-            this.button5.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.button5.Location = new System.Drawing.Point(15, 338);
+            this.button5.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(236, 46);
+            this.button5.Size = new System.Drawing.Size(266, 58);
             this.button5.TabIndex = 45;
             this.button5.Text = "MainDab CMD version";
             this.button5.UseVisualStyleBackColor = false;
@@ -65,9 +65,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 248);
+            this.label1.Location = new System.Drawing.Point(12, 310);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 17);
+            this.label1.Size = new System.Drawing.Size(113, 20);
             this.label1.TabIndex = 46;
             this.label1.Text = "MISC Modules";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -80,10 +80,10 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(5, 6);
-            this.button1.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.button1.Location = new System.Drawing.Point(6, 8);
+            this.button1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(237, 46);
+            this.button1.Size = new System.Drawing.Size(267, 58);
             this.button1.TabIndex = 47;
             this.button1.Text = "Simplified Chinese";
             this.button1.UseVisualStyleBackColor = false;
@@ -92,9 +92,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 7);
+            this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 17);
+            this.label2.Size = new System.Drawing.Size(145, 20);
             this.label2.TabIndex = 48;
             this.label2.Text = "Language Modules";
             // 
@@ -106,10 +106,10 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(252, 6);
-            this.button2.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.button2.Location = new System.Drawing.Point(285, 8);
+            this.button2.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(237, 46);
+            this.button2.Size = new System.Drawing.Size(267, 58);
             this.button2.TabIndex = 50;
             this.button2.Text = "Traditional Chinese";
             this.button2.UseVisualStyleBackColor = false;
@@ -129,10 +129,9 @@
             this.flowLayoutPanel1.Controls.Add(this.button9);
             this.flowLayoutPanel1.Controls.Add(this.button10);
             this.flowLayoutPanel1.Controls.Add(this.button11);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(1, 26);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(1, 32);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(532, 220);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(598, 275);
             this.flowLayoutPanel1.TabIndex = 51;
             // 
             // button3
@@ -143,10 +142,10 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(5, 64);
-            this.button3.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.button3.Location = new System.Drawing.Point(6, 82);
+            this.button3.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(237, 46);
+            this.button3.Size = new System.Drawing.Size(267, 58);
             this.button3.TabIndex = 51;
             this.button3.Text = "Coming Soon";
             this.button3.UseVisualStyleBackColor = false;
@@ -159,14 +158,13 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.SystemColors.Control;
-            this.button4.Location = new System.Drawing.Point(252, 64);
-            this.button4.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.button4.Location = new System.Drawing.Point(285, 82);
+            this.button4.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(237, 46);
+            this.button4.Size = new System.Drawing.Size(267, 58);
             this.button4.TabIndex = 52;
             this.button4.Text = "Coming Soon";
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button6
             // 
@@ -176,10 +174,10 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.SystemColors.Control;
-            this.button6.Location = new System.Drawing.Point(5, 122);
-            this.button6.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.button6.Location = new System.Drawing.Point(6, 156);
+            this.button6.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(237, 46);
+            this.button6.Size = new System.Drawing.Size(267, 58);
             this.button6.TabIndex = 53;
             this.button6.Text = "Coming Soon";
             this.button6.UseVisualStyleBackColor = false;
@@ -192,10 +190,10 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.SystemColors.Control;
-            this.button7.Location = new System.Drawing.Point(252, 122);
-            this.button7.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.button7.Location = new System.Drawing.Point(285, 156);
+            this.button7.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(237, 46);
+            this.button7.Size = new System.Drawing.Size(267, 58);
             this.button7.TabIndex = 54;
             this.button7.Text = "Coming Soon";
             this.button7.UseVisualStyleBackColor = false;
@@ -208,10 +206,10 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.SystemColors.Control;
-            this.button8.Location = new System.Drawing.Point(5, 180);
-            this.button8.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.button8.Location = new System.Drawing.Point(6, 230);
+            this.button8.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(237, 46);
+            this.button8.Size = new System.Drawing.Size(267, 58);
             this.button8.TabIndex = 55;
             this.button8.Text = "Coming Soon";
             this.button8.UseVisualStyleBackColor = false;
@@ -224,10 +222,10 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.SystemColors.Control;
-            this.button9.Location = new System.Drawing.Point(252, 180);
-            this.button9.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.button9.Location = new System.Drawing.Point(285, 230);
+            this.button9.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(237, 46);
+            this.button9.Size = new System.Drawing.Size(267, 58);
             this.button9.TabIndex = 56;
             this.button9.Text = "Coming Soon";
             this.button9.UseVisualStyleBackColor = false;
@@ -240,10 +238,10 @@
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.SystemColors.Control;
-            this.button10.Location = new System.Drawing.Point(5, 238);
-            this.button10.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.button10.Location = new System.Drawing.Point(6, 304);
+            this.button10.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(237, 46);
+            this.button10.Size = new System.Drawing.Size(267, 58);
             this.button10.TabIndex = 57;
             this.button10.Text = "Coming Soon";
             this.button10.UseVisualStyleBackColor = false;
@@ -256,27 +254,26 @@
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button11.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.SystemColors.Control;
-            this.button11.Location = new System.Drawing.Point(252, 238);
-            this.button11.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.button11.Location = new System.Drawing.Point(285, 304);
+            this.button11.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(237, 46);
+            this.button11.Size = new System.Drawing.Size(267, 58);
             this.button11.TabIndex = 58;
             this.button11.Text = "Coming Soon";
             this.button11.UseVisualStyleBackColor = false;
             // 
             // Form8
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.ClientSize = new System.Drawing.Size(534, 322);
+            this.ClientSize = new System.Drawing.Size(601, 403);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button5);
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form8";
             this.Text = "Downloadable Modules";
             this.Load += new System.EventHandler(this.Form8_Load);

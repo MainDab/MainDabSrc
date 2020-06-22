@@ -1,0 +1,1 @@
+print("MainDab API loaded! Go to the autoexec folder and place your script there.")

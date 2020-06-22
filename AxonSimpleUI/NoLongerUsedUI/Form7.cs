@@ -9,9 +9,6 @@ namespace ProjectMainDab
 {
     public partial class Form7 : Form
     {
-        // This is a failed spalsh screen which never worked out in the end
-
-
         public Form7()
         {
             InitializeComponent();

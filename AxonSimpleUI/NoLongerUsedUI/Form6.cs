@@ -6,8 +6,6 @@ namespace ProjectMainDab
 {
     public partial class Form6 : Form
     {
-        // This was the old sign up system in MainDab, to be used with a blacklist system.
-
         public Form6()
         {
             InitializeComponent();
@@ -58,11 +56,6 @@ namespace ProjectMainDab
 
         private void TitleDraggable_Click(object sender, EventArgs e)
         {
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

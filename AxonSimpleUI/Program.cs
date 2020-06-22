@@ -7,13 +7,11 @@ using System.Management;
 
 namespace ProjectMainDab
 {
-    // Startup of the program
     internal static class Program
     {
         [STAThread]
         private static void Main()
         {
-            // HWID blacklist, naughty naughty people get blacklisted
             var mbs = new ManagementObjectSearcher("Select ProcessorId From Win32_processor");
             ManagementObjectCollection mbsList = mbs.Get();
             string id = "";
@@ -37,9 +35,9 @@ namespace ProjectMainDab
                 {
                     File.Delete("EasyExploits.dll");
                 }
-                if (File.Exists("EasyExploitsDLL.dll"))
+                if (File.Exists("TotallyNotEasyExploitsDLL.dll"))
                 {
-                    File.Delete("EasyExploitsDLL.dll");
+                    File.Delete("TotallyNotEasyExploitsDLL.dll");
                 }
                 if (File.Exists("MetroSuite 2.0.dll"))
                 {
@@ -59,16 +57,40 @@ namespace ProjectMainDab
                 {
                     File.Delete(file);
                 }
-                WebClient webClient = new WebClient();
-                if (File.Exists(@"c:\windows\twain_8.dll"))
+                string file1 = ("betaupdate.exe");
+                if (File.Exists(file1))
                 {
-                    File.Delete(@"c:\windows\twain_8.dll");
+                    File.Delete(file1);
                 }
 
+                if (!Directory.Exists("Applications"))
+                {
+                    MessageBox.Show("Important folder not found! Please reinstall MainDab!");
+                }
+                
+                if (!Directory.Exists("Monaco"))
+                {
+                    MessageBox.Show("Important folder not found! Please reinstall MainDab!");
+                }
+                if (!Directory.Exists("Scripts"))
+                {
+                    MessageBox.Show("Important folder not found! Please reinstall MainDab!");
+                }
+
+                // dlls
+                var sex = new WebClient();
+
+                
+
+                if (File.Exists("MainDab Updater.exe"))
+                {
+                    File.Delete("MainDab Updater.exe");
+
+                }
                 System.Net.WebClient wc = new System.Net.WebClient();
                 byte[] raw = wc.DownloadData("https://pastebin.com/raw/QpwkAJS4");
                 string webData = System.Text.Encoding.UTF8.GetString(raw);
-                string version = ("Project MainDab V.3.5");
+                string version = ("Project MainDab V.4.6");
                 if (version == webData)
                 {
 
@@ -88,7 +110,7 @@ namespace ProjectMainDab
                         File.Delete(file);
                     }
                     MessageBox.Show("Update found to " + (webData) + (". Click OK to update."));
-                    client.DownloadFile("https://github.com/leonardssy/ProjectDab/blob/master/MainDab Updater.exe?raw=true", "update.exe");
+                    client.DownloadFile("https://github.com/leonardssy/ProjectDab/blob/master/MainDab%20Updater.exe?raw=true", "update.exe");
                     ServicePointManager.ServerCertificateValidationCallback = (a, b, c, d) => true; // eh just to make sure
                     System.Net.ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12; // set the protocol type to TLS 1.2
 

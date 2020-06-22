@@ -13,7 +13,6 @@ using System.Windows.Forms;
 
 namespace ProjectMainDab
 {
-    // Discontinued part of MainDab, no one used it.
     public partial class Form8 : Form
     {
         public Form8()
@@ -75,11 +74,6 @@ namespace ProjectMainDab
         }
 
         private void Form8_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
         {
 
         }

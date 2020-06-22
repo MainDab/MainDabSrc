@@ -16,7 +16,6 @@ using Microsoft.Win32;
 
 namespace ProjectMainDab
 {
-    // This was the old menu for MainDab, no longer used.
     public partial class Form2 : Form
     {
         public Form2()

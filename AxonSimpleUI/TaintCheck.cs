@@ -13,7 +13,6 @@ namespace ProjectMainDab
 {
     public partial class TaintCheck : Form
     {
-		// Taint/Detected exploit checker. Feel free to copy off this code
         public TaintCheck()
         {
             InitializeComponent();

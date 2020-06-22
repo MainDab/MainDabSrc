@@ -1,0 +1,14 @@
+C:\Users\leona\Desktop\AxonSimpleUI\PluginUpdate\bin\Debug\PluginUpdate.exe.config
+C:\Users\leona\Desktop\AxonSimpleUI\PluginUpdate\bin\Debug\PluginUpdate.exe
+C:\Users\leona\Desktop\AxonSimpleUI\PluginUpdate\bin\Debug\PluginUpdate.pdb
+C:\Users\leona\Desktop\AxonSimpleUI\PluginUpdate\obj\Debug\PluginUpdate.csprojAssemblyReference.cache
+C:\Users\leona\Desktop\AxonSimpleUI\PluginUpdate\obj\Debug\PluginUpdate.csproj.CoreCompileInputs.cache
+C:\Users\leona\Desktop\AxonSimpleUI\PluginUpdate\obj\Debug\PluginUpdate.exe
+C:\Users\leona\Desktop\AxonSimpleUI\PluginUpdate\obj\Debug\PluginUpdate.pdb
+C:\Users\leona\Desktop\MainDab\PluginUpdate\bin\Debug\PluginUpdate.exe.config
+C:\Users\leona\Desktop\MainDab\PluginUpdate\bin\Debug\PluginUpdate.exe
+C:\Users\leona\Desktop\MainDab\PluginUpdate\bin\Debug\PluginUpdate.pdb
+C:\Users\leona\Desktop\MainDab\PluginUpdate\obj\Debug\PluginUpdate.csprojAssemblyReference.cache
+C:\Users\leona\Desktop\MainDab\PluginUpdate\obj\Debug\PluginUpdate.csproj.CoreCompileInputs.cache
+C:\Users\leona\Desktop\MainDab\PluginUpdate\obj\Debug\PluginUpdate.exe
+C:\Users\leona\Desktop\MainDab\PluginUpdate\obj\Debug\PluginUpdate.pdb

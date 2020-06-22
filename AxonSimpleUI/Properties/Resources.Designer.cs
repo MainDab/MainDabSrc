@@ -173,16 +173,6 @@ namespace ProjectMainDab.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Execute {
-            get {
-                object obj = ResourceManager.GetObject("Execute", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap ezgif_com_webp_to_jpg {
             get {
                 object obj = ResourceManager.GetObject("ezgif.com-webp-to-jpg", resourceCulture);
@@ -196,16 +186,6 @@ namespace ProjectMainDab.Properties {
         internal static System.Drawing.Bitmap GitHub_Mark_32px {
             get {
                 object obj = ResourceManager.GetObject("GitHub-Mark-32px", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Inject {
-            get {
-                object obj = ResourceManager.GetObject("Inject", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -236,6 +216,16 @@ namespace ProjectMainDab.Properties {
         internal static System.Drawing.Bitmap open2 {
             get {
                 object obj = ResourceManager.GetObject("open2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngfind_com_code_png_1701498 {
+            get {
+                object obj = ResourceManager.GetObject("pngfind.com-code-png-1701498", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

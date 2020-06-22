@@ -127,6 +127,9 @@
   <data name="ezgif.com-webp-to-jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ezgif.com-webp-to-jpg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="pngfind.com-code-png-1701498" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pngfind.com-code-png-1701498.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="clear" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -142,8 +145,8 @@
   <data name="default1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1586416561512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1586416561512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="b83448f9cdbe34875c6564b4d9acc0b2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\b83448f9cdbe34875c6564b4d9acc0b2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="open" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,9 +157,7 @@
   <data name="default" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Execute" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Execute.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
+
   <data name="Run" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Run.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -169,13 +170,10 @@
   <data name="open2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\open2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Inject" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Inject.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1586416561512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1586416561512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="936-9363053_easy-button-png-share-icon-transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\936-9363053_easy-button-png-share-icon-transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="b83448f9cdbe34875c6564b4d9acc0b2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\b83448f9cdbe34875c6564b4d9acc0b2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

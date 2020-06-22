@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\cef.redist.x86.81.3.10\build\cef.redist.x86.props" Condition="Exists('..\packages\cef.redist.x86.81.3.10\build\cef.redist.x86.props')" />
+  <Import Project="..\packages\cef.redist.x64.81.3.10\build\cef.redist.x64.props" Condition="Exists('..\packages\cef.redist.x64.81.3.10\build\cef.redist.x64.props')" />
   <Import Project="..\packages\ILMerge.3.0.29\build\ILMerge.props" Condition="Exists('..\packages\ILMerge.3.0.29\build\ILMerge.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -9,7 +11,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>ProjectMainDab</RootNamespace>
     <AssemblyName>MainDab</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFrameworkProfile />
@@ -40,10 +42,32 @@
     <ApplicationManifest>MISC\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Resources\1586416561512.ico</ApplicationIcon>
+    <ApplicationIcon>Maindab.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>ProjectMainDab.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
@@ -53,19 +77,27 @@
     <Reference Include="DiscordRPC, Version=1.0.150.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\DiscordRichPresence.1.0.150\lib\net35\DiscordRPC.dll</HintPath>
     </Reference>
-    <Reference Include="EasyExploits, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\!ProjectMainDab\MainDab\EasyExploits.dll</HintPath>
+    <Reference Include="EasyExploits">
+      <HintPath>..\..\..\Downloads\EasyExploits.dll</HintPath>
     </Reference>
     <Reference Include="MetroSuite 2.0">
       <HintPath>..\..\..\!ProjectMainDab\MainDab\MetroSuite 2.0.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MoonSharp.Interpreter">
+      <HintPath>..\..\..\Downloads\MoonSharp.Interpreter.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SirHurtAPI">
+      <HintPath>..\..\..\Downloads\SirHurtAPI.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
       <Private>True</Private>
@@ -79,6 +111,7 @@
     </Reference>
     <Reference Include="System.Management" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -88,6 +121,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.cs">
@@ -96,13 +130,38 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
-    <Compile Include="Injection %28OLD%29\dWebHook.cs" />
-    <Compile Include="Themes\Form1.cs">
+    <Compile Include="LoadingScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Themes\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="LoadingScreen.Designer.cs">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="NoLongerUsedUI\MainDab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoLongerUsedUI\MainDab.Designer.cs">
+      <DependentUpon>MainDab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoLongerUsedUI\MainDab2016.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoLongerUsedUI\MainDab2016.Designer.cs">
+      <DependentUpon>MainDab2016.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewuI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewuI.Designer.cs">
+      <DependentUpon>NewuI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OldInjection\DLLInjection.cs" />
+    <Compile Include="Hub1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hub1.Designer.cs">
+      <DependentUpon>Hub1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OldInjection\dWebHook.cs" />
     <Compile Include="NoLongerUsedUI\Form2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,16 +180,16 @@
     <Compile Include="NoLongerUsedUI\Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Themes\Form4.cs">
+    <Compile Include="NoLongerUsedUI\Form4.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Themes\Form4.Designer.cs">
+    <Compile Include="NoLongerUsedUI\Form4.Designer.cs">
       <DependentUpon>Form4.cs</DependentUpon>
     </Compile>
-    <Compile Include="Themes\Form5.cs">
+    <Compile Include="NoLongerUsedUI\Form5.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Themes\Form5.Designer.cs">
+    <Compile Include="NoLongerUsedUI\Form5.Designer.cs">
       <DependentUpon>Form5.cs</DependentUpon>
     </Compile>
     <Compile Include="NoLongerUsedUI\Form6.cs">
@@ -151,22 +210,21 @@
     <Compile Include="NoLongerUsedUI\Form8.Designer.cs">
       <DependentUpon>Form8.cs</DependentUpon>
     </Compile>
-    <Compile Include="Injection %28OLD%29\Functions.cs" />
-    <Compile Include="Hub1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Hub1.Designer.cs">
-      <DependentUpon>Hub1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Injection %28OLD%29\Injector.cs" />
-    <Compile Include="Injection %28OLD%29\NamedPipes.cs" />
+    <Compile Include="OldInjection\Functions.cs" />
+    <Compile Include="OldInjection\Injector.cs" />
+    <Compile Include="OldInjection\NamedPipes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Themes\SynapseX - mainj1.cs">
+    <Compile Include="NoLongerUsedUI\SynapseX - mainj1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Themes\SynapseX - mainj1.Designer.cs">
+    <Compile Include="NoLongerUsedUI\SynapseX - mainj1.Designer.cs">
       <DependentUpon>SynapseX - mainj1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="TaintCheck.cs">
       <SubType>Form</SubType>
@@ -177,8 +235,20 @@
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Themes\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Hub1.resx">
+      <DependentUpon>Hub1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingScreen.resx">
+      <DependentUpon>LoadingScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoLongerUsedUI\MainDab.resx">
+      <DependentUpon>MainDab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoLongerUsedUI\MainDab2016.resx">
+      <DependentUpon>MainDab2016.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewuI.resx">
+      <DependentUpon>NewuI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NoLongerUsedUI\Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
@@ -189,10 +259,10 @@
     <EmbeddedResource Include="NoLongerUsedUI\Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Themes\Form4.resx">
+    <EmbeddedResource Include="NoLongerUsedUI\Form4.resx">
       <DependentUpon>Form4.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Themes\Form5.resx">
+    <EmbeddedResource Include="NoLongerUsedUI\Form5.resx">
       <DependentUpon>Form5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NoLongerUsedUI\Form6.resx">
@@ -204,25 +274,18 @@
     <EmbeddedResource Include="NoLongerUsedUI\Form8.resx">
       <DependentUpon>Form8.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Hub1.resx">
-      <DependentUpon>Hub1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <EmbeddedResource Include="Themes\SynapseX - mainj1.resx">
+    <EmbeddedResource Include="NoLongerUsedUI\SynapseX - mainj1.resx">
       <DependentUpon>SynapseX - mainj1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TaintCheck.resx">
       <DependentUpon>TaintCheck.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.config" />
     <None Include="MISC\app.manifest" />
     <None Include="MISC\packages.config" />
     <None Include="packages.config" />
@@ -261,9 +324,6 @@
     <None Include="Resources\antisst.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Execute.PNG" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\open2.png" />
   </ItemGroup>
   <ItemGroup>
@@ -276,9 +336,12 @@
     <None Include="Resources\7uJh9W1.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Maindab.ico" />
+    <Content Include="OuchHurt.dll" />
     <Content Include="Resources\1586416561512.ico" />
     <Content Include="Resources\1586417107403.ico" />
     <Content Include="MISC\logo_Cmy_icon.ico" />
+    <None Include="Resources\pngfind.com-code-png-1701498.png" />
     <None Include="Resources\b83448f9cdbe34875c6564b4d9acc0b2.png" />
     <None Include="Resources\1586416561512.png" />
     <None Include="Resources\GitHub-Mark-32px.png" />
@@ -296,5 +359,7 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\ILMerge.3.0.29\build\ILMerge.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\ILMerge.3.0.29\build\ILMerge.props'))" />
+    <Error Condition="!Exists('..\packages\cef.redist.x64.81.3.10\build\cef.redist.x64.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\cef.redist.x64.81.3.10\build\cef.redist.x64.props'))" />
+    <Error Condition="!Exists('..\packages\cef.redist.x86.81.3.10\build\cef.redist.x86.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\cef.redist.x86.81.3.10\build\cef.redist.x86.props'))" />
   </Target>
 </Project>

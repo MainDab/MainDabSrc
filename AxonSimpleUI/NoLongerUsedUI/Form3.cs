@@ -10,7 +10,6 @@ using System.Windows.Forms;
 
 namespace ProjectMainDab
 {
-    // This was another UI for MainDab, the much older version of MainDab had a launcher.
     public partial class Form3 : Form
     {
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -89,9 +88,7 @@ namespace ProjectMainDab
 
         private void button4_Click(object sender, EventArgs e)
         {
-            AxonSimpleUIForm form = new AxonSimpleUIForm();
-            form.Show();
-            base.Hide();
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
